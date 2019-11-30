@@ -1,0 +1,7 @@
+name: example_project
+
+entry_points:
+  job:
+    parameters:
+      s3_file_path: {type: string, default: ''}
+    command: "python job.py {s3_file_path}"
